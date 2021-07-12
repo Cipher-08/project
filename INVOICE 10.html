@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            background-image: url(https://i.pinimg.com/originals/01/a0/f2/01a0f26d68874209163728f38c164d8a.jpg);
+        }
+        h1{
+  display: flex;
+            justify-content: center;
+            align-items: center;
+            color: darkgrey;
+        }
+        .form{
+        
+            display: flex;
+            justify-content:;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgb(51, 51, 51);
+            box-shadow:50px 50px 2px 2px rgb(138, 138, 138);
+            border-radius: 10px;
+            margin-top: 120px;
+          background-image: url(https://p4.wallpaperbetter.com/wallpaper/871/123/602/apple-logo-white-black-wallpaper-preview.jpg);   
+        }
+        .form:hover{
+            box-shadow:2px 2px 0 0 white;
+        }
+        input{
+            color: white;
+            border: 0.2px solid white;
+            box-shadow:0.1px 1px 1px 0.5px rgb(151, 151, 151);
+            border-radius: 5px;
+            margin: 10px;
+            text-align: center;
+            
+        }
+        .sub{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+           
+        }
+        .submit{
+             background-color: rgb(180, 179, 179);
+            color: rgb(255, 255, 255);
+        }
+        .submit:hover{
+            background-color: black;
+            color: rgb(247, 3, 3);
+
+        }
+        .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100px; 
+}
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+
+       table, th, td {
+  border: 1px solid black;
+  border-color: white;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1><u>INVOICE</u></h1>
+    <div class="row">
+  <div class="column" style="color: white;">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3JLBcU6qULBKu69VTaNbIqPjOe36zay4Rhw&usqp=CAU" style="width:11rem;height: 9rem;">
+    <p>SILVER FEATHER APPLE ONLINE STORE</p>
+  </div>
+  <div class="column" style="color: white; text-align:right;padding-right:70px;">
+    <h2>ABOUT US</h2>
+    <h3><b>EMAIL</b></H3>
+    <P>SILVERFEATHER@gmail.com</P>
+    <h3><b>contact us</b></h3>
+    <p>9891xxxxxx</p>   
+  </div>
+</div>
+<br>
+<br>
+    <div class="form">
+        <FORM  action="detail.php" method="post">
+        <input type="text" placeholder="Name"  name="name" size="100"><br>
+        <input type="number" placeholder="+91" ><br>
+        <input type="number" placeholder="XXXXXXXXXXX" name="mobile"><br>
+
+        <input type="text" placeholder="Address" name="address" size="100"><br>
+        <input type="text" placeholder="City" name="city"><br>
+        <input type="text" placeholder="State" name="state"><br>
+        <input type="text" placeholder="Postal code" name="postal"><br>
+        <div class="sub">
+        <input type="submit" value="Submit" class="submit" style="color: blueviolet;">
+        </div>
+        </FORM>
+        </div>
+<BR>
+<BR>
+<div style="color:white;">
+<table style="width:100%">
+    <tr>
+        <th>ITEM</th>
+        <TH>QUANTITY</TH>
+        <TH>PRICE</TH>
+    </tr>
+    <TR>
+        <TD>Apple MacBook Pro</TD>
+        <TD>1</TD>
+        <TD>₹1,23,234</TD>
+    </TR>
+</table>
+    </div>
+    <br>
+    <br>
+    <hr style="color:white;">
+    <DIV style="color: WHITE;">
+    <h3>NOTE:-</h3>
+    <P>PRINT THE INVOICE BEFORE SUBMIT THE FORM AND THIS INVOICE IS VALID WHEN WE RECEIVE THE PAYMENT</P>
+    <IMG src="signature.png" align="right" width="350px">
+    <P>MAIL CAME TO YOUR MAIL ID FOR PAYMENT RECEIPT</P>
+    <P>YOU GOT BILL WITH PRODUCT ALSO</P>
+    <DIV>
+    <BR>
+    <button onclick="window.print()" style="color:blue; height: 20PX;" align="center">Print this page</button>
+</body>
+</html>

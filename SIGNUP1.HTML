@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup2.css">
+</head>
+<body >
+
+    <script type="text/javascript">
+  function captcha(){
+    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                 ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+','|','-',':'];
+                 var a = alpha[Math.floor(Math.random()*74)];
+                 var b = alpha[Math.floor(Math.random()*74)];
+                 var c = alpha[Math.floor(Math.random()*74)];
+                 var d = alpha[Math.floor(Math.random()*74)];
+                 var e = alpha[Math.floor(Math.random()*74)];
+                 var f = alpha[Math.floor(Math.random()*74)];
+
+                 var last = a+b+c+d+e+f;
+                 document.getElementById("cap").value=last;
+               }
+               function validcaptcha(){
+                var stg1 = document.getElementById('cap').value;
+                var stg2 = document.getElementById('textinput').value;
+                if(stg1==stg2){
+                  alert("validated Succesfully");
+                  return true;
+                }else{
+                  alert("enter a valid captcha");
+                  return false;
+                }
+               }
+</script>
+    <script>
+    function hide(){
+        
+        
+        document.getElementById('myimage').style.display ='none';
+    }
+    function show(){
+        document.getElementById('myimage').style.display ='inline';
+    }
+    
+    </script>
+    <img id="myimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtcNhRBRAZtELGu8thO4uPPnY2hUUwmfkNQ&usqp=CAU" align="right" style="display:none">
+    <div class="sign-up">
+        <h1>SIGN UP</h1>
+        <form method="POST" action="connect.php">
+            <input type="EMAIL" class="INPUT_BOX" placeholder="YOUR EMAIL" name="username">
+            <BR><BR>
+            <input type="password" class="INPUT_BOX" placeholder="YOUR PASSWORD" name="password">
+            <P><INPUT type="CHECKBOX">
+           <b><i> Terms of Service  </i></b>      <button type="button" onclick="show();" >SHOW</button>
+                <button type="button" onclick="hide();" >HIDE</button></P>
+                <label style="font-size: 40;"><b>Enter Captcha:</b></label>
+   <br>
+          <input type="text" class="input" readonly id="cap">
+          <input type="text" class="input" id="textinput">
+    <h6>Captcha not visible <img src="refresh.jpg" width="40px" onclick="captcha()"></h6>
+   <button onclick="validcaptcha()" style="border: 30px; 
+  width: 70%; color:red;  
+  padding: 20px;
+  border-radius: 30px;
+  margin: 20px 0;
+  cursor: pointer; 
+  font-size: 20px; 
+  background-color:lightsalmon;">SIGN UP</button>
+            <hr>
+            <p class="OR">OR</p>
+            <p>ALREADY HAVE AN ACCOUNT <a href="signin 2.html"> SIGN IN</a></a></p>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

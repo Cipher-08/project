@@ -1,0 +1,196 @@
+ 
+        *{
+            padding: 0px;
+            box-sizing:border-box;
+         }
+         .phones{
+             display: flex;
+             flex-direction:row;
+             align-items: center;
+             justify-content: center;
+             height: 100vh;           
+         }
+         .ipads{
+              display: flex;
+             flex-direction:row;
+             align-items: center;
+             justify-content: center;
+             height: 100vh;
+     
+      
+ 
+         }
+        
+        
+         .home{
+             height: 92vh;
+             background-color: black;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+         .home>img{
+             height: 150px;
+             transition: 2s;
+         }
+          .home>img:hover{
+              height: 200px;
+          }
+          .buttons-both{
+              display: flex;
+            padding: 10px;
+            margin: 10px;
+              flex-direction: row;
+          }
+          .amount{
+              margin: 20px;
+          }
+          .question{
+              color: white;
+              height: 100vh;
+              background-color: black;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+              font-size: xx-large;
+       
+          }
+          .videos1,.videos3,.videos5{
+              display: flex;
+              justify-content: center;
+              align-items: baseline;
+              margin-right: 0px;
+          
+              border: 1px solid pink;
+              background-color: pink;
+           
+              margin-bottom: 10px;
+          }
+          .videos2,.videos4{
+                display: flex;
+              justify-content: center;
+              align-items: baseline;
+              margin-right: 0px;
+           
+             border: 1px solid pink;
+              background-color: pink;
+              margin-top: 10px;
+              margin-bottom: 10px;
+ 
+          }
+          .video{
+              background-color: rgb(0, 0, 0);
+              border: 5px solid rgb(0, 0, 0);
+     
+              display: flex;
+              justify-content: center;
+          }
+          .steve{
+              background-color: black;
+              height: 100vh;
+              display: flex;
+              align-items: center;
+          }
+          .steve > h3{
+              justify-content: center;
+              color: white;
+          }
+          .founder{
+              background-color: black;
+              color: white;
+              height: 100vh;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              padding-right:90%;
+              padding-bottom: 1%;
+                       }
+     *{
+         margin: 0;
+         padding: 0;
+         color: #454545;
+     }
+     h1{
+         width: 3%;
+         position: relative;
+         top: 60px;
+         left: 90%;
+         cursor: pointer;
+     }
+     h1:before{
+         content: attr(data-count);
+         color: white;
+         position: absolute;
+         right: 16px;
+         font-size: 15px;
+         text-align: center;
+         top: -12px;
+         width: 20px;
+         height: 20px;
+         background: red;
+         border-radius: 50%;
+         opacity: 0;
+     }
+     h1.zero:before{
+         opacity: 1;
+     }
+     
+         
+         .select{
+             width: 60%;
+             height: 580px;
+             padding: 5%;
+             background: #222;
+             position: absolute;
+             top: -1000px;
+             left: 20%;
+             transition: 0.5s;
+             overflow-y: auto;
+             margin: auto;
+         }
+         .select.display{
+             top: 10px;
+         }
+         .select div{
+             width: 500%;
+             height: 450px;
+             display: flex;
+             padding-right: 50px;
+             padding-bottom: 80px;
+             border: 1px solid rgb(110, 39, 168);
+             position: left;
+             margin: 20px auto;
+         }
+         .select div img{
+             width: 200px;
+             height: 100%;
+         }
+         .select div p{
+             padding: 35px;
+             color: rgb(20, 19, 19);
+             text-align:center;
+         }
+         .select div h6{
+            padding-right: 50px;
+            text-indent: 50px;
+            text-decoration: rgb(254, 255, 255);
+            text-align: right;
+         }
+         .select div button{
+             position: absolute;
+             left: 85%;
+             bottom: 30%;
+             color: rgb(172, 33, 33);
+             text-align: right;
+           border: 1;
+           display: none;
+         }
+         .select div button{
+             left: 60%;
+             top: 55%;
+            
+         }
+         .select div span{
+             display: none;
+         }
